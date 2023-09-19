@@ -1,0 +1,18 @@
+
+
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="countryName">Country Name:</label>
+      <input type="text" id="countryName" name="countryName" [(ngModel)]="formData.countryName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="genderName">Gender Name:</label>
+      <input type="text" id="genderName" name="genderName" [(ngModel)]="formData.genderName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="maritalStatusName">Marital Status Name:</label>
+      <input type="text" id="maritalStatusName" name="maritalStatusName" [(ngModel)]="formData.maritalStatusName" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  

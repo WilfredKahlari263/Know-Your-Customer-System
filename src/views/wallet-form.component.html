@@ -1,0 +1,38 @@
+
+
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="walletStatus">Wallet Status:</label>
+      <select id="walletStatus" name="walletStatus" [(ngModel)]="formData.walletStatus" class="form-control" required>
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+        <option value="suspended">Suspended</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="availableBalance">Available Balance:</label>
+      <input type="number" id="availableBalance" name="availableBalance" [(ngModel)]="formData.availableBalance" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="reservations">Reservations:</label>
+      <input type="number" id="reservations" name="reservations" [(ngModel)]="formData.reservations" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="walletCurrency">Wallet Currency:</label>
+      <input type="text" id="walletCurrency" name="walletCurrency" [(ngModel)]="formData.walletCurrency" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="walletName">Wallet Name:</label>
+      <input type="text" id="walletName" name="walletName" [(ngModel)]="formData.walletName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="currentBalance">Current Balance:</label>
+      <input type="number" id="currentBalance" name="currentBalance" [(ngModel)]="formData.currentBalance" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="walletDescription">Wallet Description:</label>
+      <textarea id="walletDescription" name="walletDescription" [(ngModel)]="formData.walletDescription" class="form-control" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  

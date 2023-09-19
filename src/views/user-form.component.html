@@ -1,0 +1,58 @@
+
+
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="passportNumber">Passport Number:</label>
+      <input type="text" id="passportNumber" name="passportNumber" [(ngModel)]="formData.passportNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="passportExpiry">Passport Expiry Date:</label>
+      <input type="date" id="passportExpiry" name="passportExpiry" [(ngModel)]="formData.passportExpiry" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth" [(ngModel)]="formData.dateOfBirth" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="formData.email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="firstName">middle name:</label>
+        <input type="text" id="middleName" name="middleName" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">last name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">phone number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">gender:</label>
+        <input type="text" id="gender" name="gender" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">marital status:</label>
+        <input type="text" id="maritalStatus" name="maritalStatus" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">birth country:</label>
+        <input type="text" id="birthCountry" name="birthCountry" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">Birth city</label>
+        <input type="text" id="birthCity" name="birthCity" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">nationality:</label>
+        <input type="text" id="nationality" name="nationality" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  

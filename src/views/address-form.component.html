@@ -1,0 +1,71 @@
+
+<form (ngSubmit)="onSubmit()" #addressForm="ngForm">
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <input
+        type="text"
+        id="country"
+        name="country"
+        [(ngModel)]="formData.country"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        [(ngModel)]="formData.city"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="postalCode">Postal Code:</label>
+      <input
+        type="text"
+        id="postalCode"
+        name="postalCode"
+        [(ngModel)]="formData.postalCode"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="addressLine1">Address Line 1:</label>
+      <input
+        type="text"
+        id="addressLine1"
+        name="addressLine1"
+        [(ngModel)]="formData.addressLine1"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="addressLine2">Address Line 2:</label>
+      <input
+        type="text"
+        id="addressLine2"
+        name="addressLine2"
+        [(ngModel)]="formData.addressLine2"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="addressLine3">Address Line 3:</label>
+      <input
+        type="text"
+        id="addressLine3"
+        name="addressLine3"
+        [(ngModel)]="formData.addressLine3"
+        class="form-control"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+
+  
